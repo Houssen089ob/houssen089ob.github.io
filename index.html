@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>H&R Reklam AB</title>
+<style>
+    body {
+        margin: 0;
+        font-family: "Arial", sans-serif;
+        background: #f5f5f5;
+        color: #000;
+    }
+
+    /* Бруталистский стиль */
+    h1, h2, h3 {
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+    section {
+        padding: 80px 120px;
+        border-bottom: 4px solid #000;
+    }
+
+    /* Правое навигационное меню */
+    nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 90px;
+        height: 100%;
+        background: #000;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+        z-index: 10;
+    }
+
+    nav a {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        color: #fff;
+        text-decoration: none;
+        margin: 20px 0;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+
+    .container {
+        max-width: 1400px;
+        margin-right: 120px; 
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .row img {
+        width: 45%;
+        border: 4px solid #000;
+    }
+
+    .services, .advantages, .process {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+
+    /* Контакты */
+    #kontakt {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .icon-left {
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+
+    /* Форма */
+    form {
+        border: 4px solid #000;
+        padding: 30px;
+        background: #fff;
+        width: 400px;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 2px solid #000;
+        background: #f0f0f0;
+    }
+
+    button {
+        background: #000;
+        color: #fff;
+        padding: 12px 25px;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    footer {
+        padding: 60px 120px;
+        background: #000;
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+</style>
+</head>
+<body>
+
+<!-- Навигация -->
+<nav>
+    <a href="#hero">Start</a>
+    <a href="#services">Tjänster</a>
+    <a href="#kontakt">Kontakt</a>
+</nav>
+
+
+<div class="container">
+
+<!-- 1. Главный экран -->
+<section id="hero">
+    <h1>H&R Reklam AB</h1>
+    <h2>Strategisk reklam & digital dominans</h2>
+    <p>
+        Vi hjälper företag att växa snabbare genom datadriven marknadsföring, starka varumärkesstrategier 
+        och optimerade digitala processer. Vår metodik fokuserar på tydliga resultat, mätbar utveckling 
+        och maximalt värde för varje investerad krona.
+    </p>
+</section>
+
+
+<!-- 2. Про нас -->
+<section id="about">
+    <h2>Vilka vi är</h2>
+    <div class="row">
+        <div>
+            <p>
+                H&R Reklam AB är ett kreativt och tekniskt inriktat team som kombinerar marknadsföring, 
+                analys och affärsstrategi för att bygga starka digitala varumärken. Vi arbetar nära våra kunder 
+                för att förstå deras mål, utmaningar och marknadspotential.
+            </p>
+            <p>
+                Vårt fokus ligger på skräddarsydda lösningar – inte standardpaket. 
+                Vi analyserar beteenden, konkurrens och kundresor för att skapa reklam och kommunikation 
+                som verkligen gör skillnad. Hos oss får du en partner som bryr sig om tillväxt, detaljer 
+                och långsiktig framgång.
+            </p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1603201667141-5a2d4c673378?w=600&auto=format&fit=crop&q=60" alt="Office Team">
+    </div>
+</section>
+
+
+<!-- 3. Сервисы -->
+<section id="services">
+    <h2>Vad vi erbjuder</h2>
+
+    <div class="services">
+        <div>
+            <h3>Digital Marknadsföring</h3>
+            <p>
+                Vi skapar kampanjer som bygger räckvidd, konverterar och engagerar. 
+                Genom riktad annonsering och optimerad kanalstrategi skapar vi stabil och skalbar tillväxt.
+            </p>
+        </div>
+
+        <div>
+            <h3>SEO & Synlighet</h3>
+            <p>
+                Våra SEO-strategier bygger på teknisk optimering, innehållsanalys och löpande förbättringar. 
+                Målet är högre ranking, bättre trafik och mätbara resultat.
+            </p>
+        </div>
+
+        <div>
+            <h3>Brand & E-Handelskonsultation</h3>
+            <p>
+                Vi utvecklar starka varumärken och effektiva e-handelsstrukturer. 
+                Genom att förstärka identitet och kundupplevelse skapar vi ökad försäljning och lojalitet.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- 4. Преимущества -->
+<section id="advantages">
+    <h2>Varför välja oss</h2>
+
+    <div class="advantages">
+        <div>
+            <h3>Strategier som fungerar</h3>
+            <p>Vi bygger alla lösningar på data, beteendeanalys och tydliga mål – inga gissningar, bara resultat.</p>
+        </div>
+
+        <div>
+            <h3>Fokus på lönsamhet</h3>
+            <p>Varje åtgärd vi föreslår har ett syfte: att öka värdet på din marknadsföring och stärka affären långsiktigt.</p>
+        </div>
+
+        <div>
+            <h3>Nära samarbete</h3>
+            <p>Vi arbetar som en förlängning av ditt team och håller dig informerad genom hela processen.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- 5. Наш процесс -->
+<section id="process">
+    <h2>Hur vi arbetar</h2>
+
+    <div class="process">
+        <div>
+            <h3>1. Analys & Insikt</h3>
+            <p>Vi börjar med att förstå din marknad, målgrupp och nuläge genom detaljerad datainsamling.</p>
+        </div>
+
+        <div>
+            <h3>2. Strategi & Struktur</h3>
+            <p>Baserat på insikterna skapar vi en tydlig handlingsplan med konkreta steg och tydliga KPI:er.</p>
+        </div>
+
+        <div>
+            <h3>3. Genomförande & Optimering</h3>
+            <p>Vi lanserar, mäter och förbättrar kontinuerligt – alltid med fokus på stabil tillväxt.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- 6. Контакты -->
+<section id="kontakt">
+    <div class="icon-left">✉️</div>
+    <h2>Kontakta oss</h2>
+    <p>
+        Hör gärna av dig via e-post – vi svarar snabbt och hjälper dig att hitta rätt lösning för dina mål.  
+        Oavsett om du behöver rådgivning, en full marknadsstrategi eller optimering av befintliga kanaler, 
+        finns vi här för att hjälpa dig att växa.
+    </p>
+
+    <p><strong>E-post:</strong> support@hrreklam.pro</p>
+    <p><strong>Adress:</strong> Smalbäcksgatan 2C, 722 24 Västerås</p>
+</section>
+
+
+<!-- 7. Контактная форма -->
+<section id="form">
+    <h2>Skicka en förfrågan</h2>
+    <p>Fyll i formuläret så återkommer vi med ett snabbt och tydligt svar.</p>
+
+    <form>
+        <input type="text" placeholder="Ditt namn">
+        <input type="email" placeholder="Din e-post">
+        <textarea rows="4" placeholder="Ditt meddelande"></textarea>
+        <button type="submit">Skicka</button>
+    </form>
+</section>
+
+
+<!-- 8. Футер -->
+<footer>
+    © 2025 H&R Reklam AB — Kreativ reklam, digital strategi & varumärkesbyggande.
+</footer>
+
+</div>
+
+</body>
+</html>
